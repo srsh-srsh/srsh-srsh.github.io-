@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Midheim';
+    src: url('font\Midheim.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #01020f;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Tilt Neon";
+    font-style: italic;
+}
+
+h4{
+    font-family: "Midheim";
+    font-size: 1000%;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+h5{
+    font-family: "Midheim";
+    font-size: 600%;
+    color: #fff;
+    font-weight: 300;
+    margin-top: -190px;
+    margin-left: 20px;
+}
+
+h6{
+    font-family: "Midheim";
+    font-size: 300%;
+    color: #fff;
+    font-weight: 300;
+    margin-top: -130px;
+    margin-left: 20px;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+
+.neonWhite {
+    color: #FFFFFF;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 92px #FFFFFF;
+    font-style: italic;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 92px rgb(255, 15, 67),
+        0 0 102px rgb(255, 0, 37);
+}
+
+.neonHaluka {
+    text-shadow:
+        0 0 7px #fff;
+}
+
+.textbox {
+    background-color: #105386;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 40px auto;
+    margin-bottom: -50px;
+    margin-top: 70px;
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.textbox_about {
+    background-color: #105386;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 40px auto;
+    margin-bottom: 50px;
+    margin-top: -500px;
+    margin-left: 600px;
+    width: 50%;
+    border-radius: 20px;
+    position: relative;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    justify-self: right;
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 10px #1ab2ff, 0 0 20px #1ab2ff, 0 0 30px #1ab2ff;
+    }
+    100% {
+        box-shadow: 0 0 20px #1ab2ff, 0 0 30px #1ab2ff, 0 0 40px #1ab2ff;
+    }
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logo-box {
+    width: 200px; /* Adjust the width as needed */
+    margin: 20px;
+    box-shadow: 0 0 20px #1ab2ff;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.box {
+    background-color: rgb(16, 83, 134, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -5px 10px #1ab2ff; /* Adjusted glow effect on top */
+    padding: 80px;
+    margin: 0px;
+    text-align: right;
+    width: 100%; /* Changed width to 100% for each box to go end to end */
+    box-sizing: border-box;
+    animation: flicker 1.5s ; /* Added flicker effect */
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover::after {
+    content: "Take a closer look"; /* Add your description text here */
+    display: block;
+    color: white;
+    background-color: rgba(103, 103, 103, 0.7);
+    padding: 150px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: -100% ;
+    width: 40%;
+    box-sizing: border-box;
+    font-style: italic;
+    text-shadow: 0 0 7px #fff;
+    animation: slideInLeft 0.5s forwards;
+}
+
+.boxL {
+    background-color: rgb(16, 83, 134, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -5px 10px #1ab2ff; /* Adjusted glow effect on top */
+    padding: 80px;
+    margin: 0px;
+    text-align: left;
+    width: 100%; /* Changed width to 100% for each box to go end to end */
+    box-sizing: border-box;
+    animation: flicker 1.5s ; /* Added flicker effect */
+    position: relative;
+    overflow: hidden;
+}
+
+.boxL:hover::after {
+    content: "Take a closer look"; /* Add your description text here */
+    display: block;
+    color: white;
+    background-color: rgba(103, 103, 103, 0.7);
+    padding: 150px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 40%;
+    box-sizing: border-box;
+    font-style: italic;
+    text-shadow: 0 0 7px #fff;
+    animation: slideIn 0.5s forwards;
+}
+
+.imageR, .imageL {
+    max-width: calc(100% - 40px); /* Adjust as needed to account for margin */
+    height: 600px;
+    margin-top: -300px;
+    margin-bottom: -400px;
+    display: block;
+    position: relative;
+    opacity: 80%;
+}
+
+.imageR {
+    float: right;
+    margin-left: -200px; /* Remove margin-left */
+    margin-right: -200px; /* Remove margin-right */
+}
+
+.imageL {
+    float: left;
+    margin-right: 40; 
+    margin-left: -200px; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-center {
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(26, 178, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-left: 400px;
+}
+
+.image-left {
+    max-width: 30%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(26, 178, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-left: -1000px;
+}
+
+@keyframes slideIn {
+    0% {
+        right: -100%; /* Changed left to right */
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        left: -100%; /* Changed right to left */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Noto Sans Newa', sans-serif;
+}
+
+.neonSign {
+    border-width: 20px;
+    border-color: #FFFFFF;
+    border:
+        0 0 7px #fff,
+        0 0 10px #fff,
+
+        0 0 92px rgb(255, 15, 67),
+        0 0 102px rgb(255, 0, 37);
+    border-radius: 40px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: "Tilt Neon";
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -25px;
+    font-size: 50px;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: "Noto Sans Newa", sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: -50px;
+    font-size: 50px;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: xx-large;
+    font-weight: 400;
+}

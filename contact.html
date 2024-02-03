@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Newa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt Neon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Ha-ku Khi-tsa</title>
+    <style>
+        body {
+            background-color: #060A41;
+            font-family: 'Arial', sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            margin-left: 40px;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-family: "Tilt Neon";
+            font-style: italic;
+        }
+        form{
+            margin-top: 100px;
+        }
+        .textbox {
+            background-color: #105386;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 40px auto;
+            margin-bottom: -50px;
+            margin-top: 70px;
+            width: 70%;
+            border-radius: 20px;
+            position: relative;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+
+        .email-box {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #060A41;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #060A41;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #060A41;
+            color: #fff;
+        }
+
+        @keyframes neon {
+            0% {
+                box-shadow: 0 0 10px #1ab2ff, 0 0 20px #1ab2ff, 0 0 30px #1ab2ff;
+            }
+            100% {
+                box-shadow: 0 0 20px #1ab2ff, 0 0 30px #1ab2ff, 0 0 40px #1ab2ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="neonWhite">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="neonSign">
+            <h1 class="neonText">Tuyu Khitsa</h1>
+            <h2 class="neonText">𑐟𑐸𑐫𑐸 𑐏𑐶𑐔𑐵</h2>
+        </div>
+        <div class="textbox">
+            <p class="neonWhite">Welcome to my creative space where design meets innovation. Below, you'll find a showcase of some of my notable graphic design projects. Feel free to explore and get inspired!</p>
+        </div>
+    </header>
+
+    <section id="contact" class="email-box">
+        <h2 class="neonWhite">Contact Me</h2>
+
+        <form>
+            <label for="name" class="neonHaluka">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" class="neonHaluka">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message" class="neonHaluka">Your Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
