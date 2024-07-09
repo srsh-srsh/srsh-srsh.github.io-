@@ -12,39 +12,47 @@
     <title>Contact Ha-ku Khi-tsa</title>
     <style>
         body {
-            background-color: #fbf4e9;
+            background-color: #ffffff;
             font-family: 'Arial', sans-serif;
             color: #01020f;
             margin: 0;
             padding: 0;
         }
 
-        nav ul {
-            list-style-type: none;
+        nav {
+            background-color: #1d1e32;
             margin: 0;
-            margin-left: 40px;
-            margin-top: 20px;
-            padding: 0;
+            padding-bottom: 5px;
+        }
+
+        nav ul {
+            margin-top: 0;
+            padding-top: 15px;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            list-style-type: none;
+            margin: 20px 40px 0 0;
+            padding: 0;
         }
 
         nav a {
             text-decoration: none;
-            color: 01020f;
+            color: #ffffff;
             font-family: "Tilt Neon";
             font-style: italic;
+            margin-left: 15px;
         }
-        form{
+
+        form {
             margin-top: 100px;
             width: 90%;
             margin-left: 5%;
         }
+
         .textbox {
-            background-color: #a8a39a;
+            background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin: 40px auto;
@@ -60,6 +68,7 @@
             text-align: center;
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         label {
@@ -69,21 +78,32 @@
             color: #01020f;
         }
 
-        input,
+        input[type="text"],
+        input[type="email"],
         textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #fff;
             border-radius: 5px;
-            background-color: #a8a39a;
+            background-color: #ffffff;
             color: #01020f;
             font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        textarea::placeholder {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #a0a0a0;
         }
 
         button {
             padding: 10px 20px;
-            background-color: #a8a39a;
+            background-color: #ffffff;
             color: #01020f;
             border: none;
             border-radius: 5px;
@@ -95,42 +115,41 @@
             background-color: #060A41;
             color: #fff;
         }
-
     </style>
 </head>
 <body>
-    <nav>
-        <ul class="neonWhite">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="neonSign">
-            <h1 class="neonText">Tuyu Khitsa</h1>
-            <h2 class="neonText">𑐟𑐸𑐫𑐸 𑐏𑐶𑐔𑐵</h2>
-        </div>
-        <div class="textbox">
-            <p class="neonWhite">Welcome to my creative space where design meets innovation. Below, you'll find a showcase of some of my notable graphic design projects. Feel free to explore and get inspired!</p>
-        </div>
-    </header>
+<nav>
+    <ul class="neonWhite">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="neonSign">
+        <h1 class="neonText">Tuyu Khitsa</h1>
+        <h2 class="neonText">𑐟𑐸𑐫𑐸 𑐏𑐶𑐔𑐵</h2>
+    </div>
+    <div class="textbox">
+        <p class="neonWhite">Welcome to my creative space where design meets innovation. Below, you'll find a showcase of some of my notable graphic design projects. Feel free to contact me, and we can brainstorm something together!</p>
+    </div>
+</header>
 
-    <section id="contact" class="email-box">
-        <h2 class="neonWhite">Contact Me</h2>
+<section id="contact" class="email-box">
+    <h2 class="neonWhite">Contact Me</h2>
 
-        <form>
-            <label for="name" class="neonHaluka">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <form>
+        <label for="name" class="neonHaluka">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="email" class="neonHaluka">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="email" class="neonHaluka">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="message" class="neonHaluka">Your Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+        <label for="message" class="neonHaluka">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 </body>
 </html>

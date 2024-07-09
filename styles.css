@@ -1,36 +1,46 @@
 @font-face {
     font-family: 'Midheim';
-    src: url('font\Midheim.ttf') format('truetype');
+    src: url('font/Midheim.ttf') format('truetype');
 }
 
-body {
+title {
+    text-align: left;
+}
+
+body, html {
     font-family: 'Arial', sans-serif;
-    background-color: #fbf4e9;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #1d1e32;
     margin: 0;
     padding: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 40px;
-    margin-top: 20px;
-    padding: 0;
+    margin-top: 0;
+    padding-top: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    list-style-type: none;
+    margin: 20px 40px 0 0;
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #01020f;
+    color: #ffffff;
     font-family: "Tilt Neon";
     font-style: italic;
+    margin-left: 15px;
 }
 
-h4{
+h4 {
     font-family: "Midheim";
     font-size: 1000%;
     color: #01020f;
@@ -39,7 +49,7 @@ h4{
     margin-left: 20px;
 }
 
-h5{
+h5 {
     font-family: "Midheim";
     font-size: 600%;
     color: #01020f;
@@ -48,7 +58,7 @@ h5{
     margin-left: 20px;
 }
 
-h6{
+h6 {
     font-family: "Midheim";
     font-size: 300%;
     color: #01020f;
@@ -57,16 +67,7 @@ h6{
     margin-left: 20px;
 }
 
-a:link { 
-    text-decoration: none; 
-} 
-a:visited { 
-    text-decoration: none; 
-} 
-a:hover { 
-    text-decoration: none; 
-} 
-a:active { 
+a:link, a:visited, a:hover, a:active { 
     text-decoration: none; 
 }
 
@@ -75,7 +76,7 @@ a:active {
     font-style: italic;
 }
 
-.neonWhite:hover::after{
+.neonWhite:hover::after {
     text-decoration: none;
     color: #01020f;
     font-style: italic;
@@ -85,18 +86,18 @@ a:active {
 .neonText, .neonHaluka {
     color: #01020f;
 }
-.neonText{
+
+.neonText {
     margin-top: 30px;
+    animation: text 3s 1;
 }
 
 .textbox {
-    background-color: #a8a39a;
+    background-color: #9abdfa;
     box-shadow: #01020f;
     padding: 20px;
     text-align: center;
-    margin: 40px auto;
-    margin-bottom: -50px;
-    margin-top: 70px;
+    margin: 70px auto 0;
     width: 70%;
     border-radius: 20px;
     position: relative;
@@ -104,13 +105,10 @@ a:active {
 }
 
 .textbox_about {
-    background-color: #a8a39a;
+    background-color: #9abdfa;
     padding: 20px;
     text-align: center;
-    margin: 40px auto;
-    margin-bottom: 50px;
-    margin-top: -500px;
-    margin-left: 600px;
+    margin: -500px auto 50px 600px;
     width: 50%;
     border-radius: 20px;
     position: relative;
@@ -145,23 +143,24 @@ a:active {
 }
 
 .box {
-    background-color: #a8a39a;
-    box-shadow: 0px -5px 0px #01020f;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 80px;
-    margin: 0px;
+    margin: 20px; 
     text-align: right;
-    width: 100%; /* Changed width to 100% for each box to go end to end */
+    width: calc(100% - 40px); 
+    border-radius: 20px; 
     box-sizing: border-box;
-    animation: flicker 1.5s ; /* Added flicker effect */
     position: relative;
     overflow: hidden;
+    border: 1px solid black; /* Added black border */
 }
 
 .box:hover::after {
-    content: "Take a closer look"; /* Add your description text here */
+    content: "Take a closer look"; 
     display: block;
     color: white;
-    background-color: rgba(103, 103, 103, 0.7);
+    background-color: rgba(0, 0, 0, 0.529);
     padding: 150px;
     border-radius: 10px;
     position: absolute;
@@ -170,28 +169,28 @@ a:active {
     width: 40%;
     box-sizing: border-box;
     font-style: italic;
-    text-shadow: 0 0 7px #fff;
     animation: slideInLeft 0.5s forwards;
 }
 
 .boxL {
-    background-color: #a8a39a;
-    box-shadow: 0px -5px 0px #01020f;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 80px;
-    margin: 0px;
+    margin: 20px; 
     text-align: left;
-    width: 100%; /* Changed width to 100% for each box to go end to end */
+    width: calc(100% - 40px);
+    border-radius: 20px; 
     box-sizing: border-box;
-    animation: flicker 1.5s ; /* Added flicker effect */
     position: relative;
     overflow: hidden;
+    border: 1px solid black; /* Added black border */
 }
 
 .boxL:hover::after {
-    content: "Take a closer look"; /* Add your description text here */
+    content: "Take a closer look"; 
     display: block;
     color: white;
-    background-color: rgba(103, 103, 103, 0.7);
+    background-color: rgba(0, 0, 0, 0.529);
     padding: 150px;
     border-radius: 10px;
     position: absolute;
@@ -200,15 +199,13 @@ a:active {
     width: 40%;
     box-sizing: border-box;
     font-style: italic;
-    text-shadow: 0 0 7px #fff;
     animation: slideIn 0.5s forwards;
 }
 
 .imageR, .imageL {
-    max-width: calc(100% - 40px); /* Adjust as needed to account for margin */
+    max-width: calc(100% - 40px);
     height: 600px;
-    margin-top: -300px;
-    margin-bottom: -400px;
+    margin: -300px 0 -400px;
     display: block;
     position: relative;
     opacity: 80%;
@@ -216,8 +213,8 @@ a:active {
 
 .imageR {
     float: right;
-    margin-left: -200px; /* Remove margin-left */
-    margin-right: -200px; /* Remove margin-right */
+    margin-left: -200px; 
+    margin-right: -200px; 
 }
 
 .imageL {
@@ -248,9 +245,26 @@ a:active {
     margin-left: -1000px;
 }
 
+.title-container {
+    display: flex;
+    align-items:normal;
+    justify-content:flex-start;
+}
+
+.title-container .neonSign {
+    flex: 1;
+    text-align: left;
+}
+
+.title-container .title-image {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
 @keyframes slideIn {
     0% {
-        right: -100%; /* Changed left to right */
+        right: -100%;
     }
     100% {
         right: 0;
@@ -259,7 +273,7 @@ a:active {
 
 @keyframes slideInLeft {
     0% {
-        left: -100%; /* Changed right to left */
+        left: -100%;
     }
     100% {
         left: 0;
@@ -276,10 +290,7 @@ p {
 .neonSign {
     border-width: 20px;
     border-color: #FFFFFF;
-    border:
-        0 0 7px #fff,
-        0 0 10px #fff,
-
+    border: 0 0 7px #fff, 0 0 10px #fff;
 }
 
 h1 {
@@ -305,4 +316,11 @@ h3 {
     color: #01020f;
     font-size: xx-large;
     font-weight: 400;
+}
+
+footer {
+    background-color: #1c1d31;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
