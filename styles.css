@@ -38,6 +38,13 @@ nav a {
     font-family: "Tilt Neon";
     font-style: italic;
     margin-left: 15px;
+    transition: color 1s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #1d1e32; 
+    text-decoration: underline;
 }
 
 h4 {
