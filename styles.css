@@ -10,8 +10,11 @@ title {
 body, html {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -145,7 +148,7 @@ a:link, a:visited, a:hover, a:active {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    flex: 1;
     margin-top: 100px;
 }
 
@@ -326,8 +329,28 @@ h3 {
 }
 
 footer {
-    background-color: #1c1d31;
+    background-color: #1d1e32;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    margin: 0 15px;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.footer-content img:hover {
+    transform: scale(1.1);
 }
