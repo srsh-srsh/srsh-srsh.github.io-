@@ -3,13 +3,9 @@
     src: url('font/Midheim.ttf') format('truetype');
 }
 
-title {
-    text-align: left;
-}
-
 body, html {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
+    background-color: #292b52;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -53,7 +49,7 @@ nav a:hover {
 h4 {
     font-family: "Midheim";
     font-size: 1000%;
-    color: #01020f;
+    color: #ffffff;
     font-weight: 300;
     margin-top: 60px;
     margin-left: 20px;
@@ -62,7 +58,7 @@ h4 {
 h5 {
     font-family: "Midheim";
     font-size: 600%;
-    color: #01020f;
+    color: #ffffff;
     font-weight: 300;
     margin-top: -190px;
     margin-left: 20px;
@@ -71,7 +67,7 @@ h5 {
 h6 {
     font-family: "Midheim";
     font-size: 300%;
-    color: #01020f;
+    color: #ffffff;
     font-weight: 300;
     margin-top: -130px;
     margin-left: 20px;
@@ -93,17 +89,18 @@ a:link, a:visited, a:hover, a:active {
     font-weight: bold;
 }
 
-.neonText, .neonHaluka {
-    color: #01020f;
-}
-
-.neonText {
+.neonText{
+    color: #ffffff;
     margin-top: 30px;
     animation: text 3s 1;
 }
 
+.neonHaluka{
+    color: #000000;
+}
+
 .textbox {
-    background-color: #9abdfa;
+    background-color: #ffffff;
     box-shadow: #01020f;
     padding: 20px;
     text-align: center;
@@ -115,10 +112,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .textbox_about {
-    background-color: #9abdfa;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
-    margin: -500px auto 50px 600px;
+    margin: -550px auto 20px 580px;
     width: 50%;
     border-radius: 20px;
     position: relative;
@@ -150,6 +147,29 @@ a:link, a:visited, a:hover, a:active {
     align-items: center;
     flex: 1;
     margin-top: 100px;
+}
+
+.down-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    margin-top: 20px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%,
+    80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 .box {
